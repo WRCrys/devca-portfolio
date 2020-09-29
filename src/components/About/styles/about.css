@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+}
+
+.content {
+  background-color: #3385ff;
+  width: 900px;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.img-profile {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.earth {
+  width: 17%;
+  margin-left: 5%;
+}
+
+.moon {
+  width: 9%;
+  margin-left: 75%;
+}
+
+.js-logo {
+  margin-left: 85%;
+  /* transform: rotate(15deg); */
+}

@@ -1,0 +1,71 @@
+.main {
+  background-color: white;
+  width: 48%;
+  height: 56%;
+  margin: 130px 70px 0 70px;
+}
+
+.title {
+  height: 25px;
+  display: flex;
+  position: relative;
+  background-color: #e1e1e1;
+}
+
+.console-title {
+  margin-left: 20%;
+}
+
+.close-button {
+  width: 15px;
+  height: 15px;
+  background-color: #fc605b;
+  border-radius: 10px;
+  position: relative;
+  top: 5px;
+  left: 8px;
+}
+
+.minimize-button {
+  width: 15px;
+  height: 15px;
+  background-color: #fdc041;
+  border-radius: 10px;
+  position: relative;
+  top: 5px;
+  left: 12px;
+}
+
+.maxmize-button {
+  width: 15px;
+  height: 15px;
+  background-color:#35ca4a;
+  border-radius: 10px;
+  position: relative;
+  top: 5px;
+  left: 16px;
+}
+
+.folder-title {
+  position: relative;
+  left: 140px;
+}
+
+.black-area {
+  background-color: black;
+  height: 53%;
+  width: 48%;
+  position: fixed;
+}
+
+.command {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 24px;
+}

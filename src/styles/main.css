@@ -1,0 +1,19 @@
+.colorApp {
+  background-color: #262626;
+  background-image: url("https://awv3node-homepage.surge.sh/build/assets/stars.svg");
+}
+
+.csharp-logo {
+  width: 7%;
+  margin-left: 64%;
+}
+
+.react-logo {
+  width: 5%;
+  margin-left: 10%;
+}
+
+.docker-logo {
+  width: 6%;
+  margin-left: 89%;
+}
