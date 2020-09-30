@@ -2,3 +2,18 @@
   position: relative;
   left: 1000px;
 }
+
+.csharp-logo {
+  width: 7%;
+  margin-left: 64%;
+}
+
+.react-logo {
+  width: 5%;
+  margin-left: 10%;
+}
+
+.docker-logo {
+  width: 6%;
+  margin-left: 89%;
+}
