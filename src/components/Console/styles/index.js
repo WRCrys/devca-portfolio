@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         position: 'relative',
         width: '40%',
+        marginTop: 130,
         [theme.breakpoints.down("md")]: {
             marginTop: 120,
             width: '80%',

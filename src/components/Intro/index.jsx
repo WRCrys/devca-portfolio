@@ -8,6 +8,7 @@ import useStyles from './styles';
 import Astronaut from '../Astronaut';
 import ImageParallax from '../ImageParallax';
 import { Grid } from '@material-ui/core';
+import AppToolBar from '../AppToolBar';
 
 const Intro = (offset, speed) => {
 
@@ -26,7 +27,7 @@ const Intro = (offset, speed) => {
         <img src={csharp} className={classes.csharpLogo} alt="" />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0.06} speed={0.3} style={{ pointerEvents: 'none' }}>
+      <ParallaxLayer offset={0.12} speed={0.3} style={{ pointerEvents: 'none' }}>
         <img src={react} className={classes.reactLogo} alt="" />
       </ParallaxLayer>
 

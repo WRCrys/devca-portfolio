@@ -17,7 +17,7 @@ const Console = () => {
               <Paper spacing={1} className={classes.maxmizeButton}></Paper>
             </Grid>
           </Grid>
-          <Grid item xs={12} wrap="nowrap">
+          <Grid item xs={12}>
             <Typography variant="h5" style={{color: 'white'}}>{'>_Crystyano Almeida'}</Typography>
           </Grid>
         </Grid>
