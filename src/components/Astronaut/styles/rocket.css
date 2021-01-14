@@ -1,9 +1,12 @@
-.rocket {
-  position: relative;
-  left: 790px;
-  top: -70px;
+.rocket-img {
+  max-width: 500px;
+  min-height: 10px;
 }
 
-.rocket-img {
-  width: 500px;
+.astronaut{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 70px;
 }

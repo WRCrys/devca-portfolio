@@ -1,12 +1,14 @@
+import { CssBaseline } from '@material-ui/core';
 import React, { Component } from 'react'
 import Routes from './routes'
 
-class App extends Component {
-  render() {
-    return (
+const App = () => {
+  return(
+    <div>
+      <CssBaseline />
       <Routes />
-    )
-  }
+    </div>
+  );
 }
 
 export default App

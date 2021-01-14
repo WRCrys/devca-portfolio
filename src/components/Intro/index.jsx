@@ -1,53 +1,40 @@
-import React, { Component } from 'react'
-import { ParallaxLayer } from 'react-spring/renderprops-addons'
-import Console from '../Console'
-import csharp from '../../assets/csharp-logo.svg'
-import react from '../../assets/react-logo.svg'
-import docker from '../../assets/docker-logo.svg'
-import Astronaut from '../Astronaut'
-import introCSS from './styles/intro.css'
-import ImageParallax from '../ImageParallax'
-import { Grid } from '@material-ui/core'
+import React, { Component } from 'react';
+import { ParallaxLayer } from 'react-spring/renderprops-addons';
+import Console from '../Console';
+import csharp from '../../assets/csharp-logo.svg';
+import react from '../../assets/react-logo.svg';
+import docker from '../../assets/docker-logo.svg';
+import useStyles from './styles';
+import Astronaut from '../Astronaut';
+import ImageParallax from '../ImageParallax';
+import { Grid } from '@material-ui/core';
 
-class Intro extends Component {
+const Intro = (offset, speed) => {
 
-  constructor(props) {
-    super(props)
-  }
+  const classes = useStyles();
 
-  render() {
-    return (
-      <div>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <ParallaxLayer offset={this.props.offset} speed={this.props.speed} >
-              
-              <Console />
+  return (
+    <div>
+      <ParallaxLayer offset={offset} speed={speed} >
+        <div className={classes.root}>
+          <Console />
+          <Astronaut />
+        </div>
+      </ParallaxLayer>
 
-              <Astronaut />
+      <ParallaxLayer offset={0.75} speed={0.3} style={{ pointerEvents: 'none' }}>
+        <img src={csharp} className={classes.csharpLogo} alt="" />
+      </ParallaxLayer>
 
-              <ImageParallax offset={0.65} speed={0.3} image={csharp} css="csharp-logo" />
+      <ParallaxLayer offset={0.06} speed={0.3} style={{ pointerEvents: 'none' }}>
+        <img src={react} className={classes.reactLogo} alt="" />
+      </ParallaxLayer>
 
-              <ParallaxLayer offset={0.12} speed={0.3} style={{ pointerEvents: 'none' }}>
-                <img src={react} className="react-logo" alt="" />
-              </ParallaxLayer>
-
-              <ParallaxLayer offset={0.16} speed={0.3} style={{ pointerEvents: 'none' }}>
-                <img src={docker} className="docker-logo" alt="" />
-              </ParallaxLayer>
-            </ParallaxLayer>
-          </Grid>
-        </Grid>
-
-
-        {/* <ParallaxLayer offset={0.65} speed={0.3} style={{ pointerEvents: 'none' }}>
-          <img src={csharp} className="csharp-logo" alt="" />
-        </ParallaxLayer> */}
-
-
-      </div>
-    )
-  }
+      <ParallaxLayer offset={0.16} speed={0.3} style={{ pointerEvents: 'none' }}>
+        <img src={docker} className={classes.dockerLogo} alt="" />
+      </ParallaxLayer>
+    </div>
+  );
 }
 
 export default Intro

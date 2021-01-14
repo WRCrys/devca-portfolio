@@ -1,34 +1,28 @@
 import React, { Component } from 'react'
-import './styles/console.css'
+import useStyles from './styles';
 import folder from '../../assets/folder-logo.svg'
 import { Grid, Paper, Typography } from '@material-ui/core'
 
-class Console extends Component {
-  render() {
-    return (
-      <Grid item xs={6} className="cns">
-        <Grid item xs={10} className="main">
-          <Grid item xs={12} className="title">
-            <Grid item xs={2} className="groupButtons">
-              <Paper spacing={1} className="close-button"></Paper>
-              <Paper spacing={1} className="minimize-button"></Paper>
-              <Paper spacing={1} className="maxmize-button"></Paper>
-            </Grid>
-            <Grid item xs={10} className="groupTitle">
-              <img src={folder} className="folder-title" alt="" />
-              <Typography variant="h6" className="console-title">DevCrystyanoAlmeida@user</Typography>
+const Console = () => {
+
+  const classes = useStyles();
+
+  return(
+    <Grid item className={classes.root}>
+        <Grid className={classes.console}>
+          <Grid item xs={12} className={classes.title}>
+            <Grid item xs={2} className={classes.groupButtons}>
+              <Paper spacing={1} className={classes.closeButton}></Paper>
+              <Paper spacing={1} className={classes.minimizeButton}></Paper>
+              <Paper spacing={1} className={classes.maxmizeButton}></Paper>
             </Grid>
           </Grid>
+          <Grid item xs={12} wrap="nowrap">
+            <Typography variant="h5" style={{color: 'white'}}>{'>_Crystyano Almeida'}</Typography>
+          </Grid>
         </Grid>
-
-        {/* <Grid item xs={6} className="black-area" >
-              <div className="command">
-                <h1>{"_> Crystyano Almeida"}</h1>
-              </div>
-          </Grid> */}
       </Grid>
-    )
-  }
+  );
 }
 
 export default Console
