@@ -23,7 +23,7 @@ const Intro = (offset, speed) => {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0.75} speed={0.3} style={{ pointerEvents: 'none' }}>
+      <ParallaxLayer offset={0.60} speed={0.3} style={{ pointerEvents: 'none' }}>
         <img src={csharp} className={classes.csharpLogo} alt="" />
       </ParallaxLayer>
 

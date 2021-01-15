@@ -12,9 +12,11 @@ const useStyles = makeStyles((theme) => ({
     },
     csharpLogo: {
         width: '7%',
-        marginLeft: '58%',
+        marginLeft: '50%',
         [theme.breakpoints.down("md")]: {
             width: '16%',
+            marginTop: -50,
+            marginLeft: '60%',
         }
     },
     reactLogo: {
