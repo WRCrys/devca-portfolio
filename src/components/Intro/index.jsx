@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ParallaxLayer } from 'react-spring/renderprops-addons';
 import Console from '../Console';
 import csharp from '../../assets/csharp-logo.svg';
@@ -6,9 +6,6 @@ import react from '../../assets/react-logo.svg';
 import docker from '../../assets/docker-logo.svg';
 import useStyles from './styles';
 import Astronaut from '../Astronaut';
-import ImageParallax from '../ImageParallax';
-import { Grid } from '@material-ui/core';
-import AppToolBar from '../AppToolBar';
 
 const Intro = (offset, speed) => {
 

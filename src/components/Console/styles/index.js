@@ -32,9 +32,9 @@ const useStyles = makeStyles((theme) => ({
             maxWidth: 700,
             height: 380,
         },
-        
+
     },
-    title: {
+    bar: {
         minHeight: 26,
         display: 'flex',
         backgroundColor: '#e1e1e1',
@@ -87,7 +87,26 @@ const useStyles = makeStyles((theme) => ({
         maxHeight: 15,
         minWidth: 15,
         minHeight: 15,
-    }
+    },
+    title: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '80%',
+    },
+    titleStyleClass: {
+        color: '#BD8FFA',
+        fontSize: 40,
+        [theme.breakpoints.down("md")]: {
+            fontSize: 25,
+        }
+    },
+    titleStyleWhite: {
+        color: 'white'
+    },
+    titleStyleMethod: {
+        color: '#45FC75',
+    },
 }));
 
 export default useStyles;

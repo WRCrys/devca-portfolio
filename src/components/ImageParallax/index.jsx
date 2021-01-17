@@ -1,18 +1,12 @@
-import React, { Component } from 'react'
-import { ParallaxLayer } from 'react-spring/renderprops-addons'
+import React from 'react';
+import { ParallaxLayer } from 'react-spring/renderprops-addons';
 
-class ImageParallax extends Component {
-
-  constructor(props) {
-    super(props)
-  }
-  render() {
-    return (
-      <ParallaxLayer offset={this.props.offset} speed={this.props.speed} style={{ pointerEvents: 'none' }}>
-        <img src={this.props.image} className={this.props.css} alt="" />
+const ImageParallax = ({offset, speed, image, css}) => {
+  return(
+    <ParallaxLayer offset={offset} speed={speed} style={{ pointerEvents: 'none' }}>
+        <img src={image} className={css} alt="" />
       </ParallaxLayer>
-    )
-  }
+  );
 }
 
 export default ImageParallax

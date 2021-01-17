@@ -1,27 +1,37 @@
-import React, { Component } from 'react'
+import React from 'react'
 import useStyles from './styles';
-import folder from '../../assets/folder-logo.svg'
-import { Grid, Paper, Typography } from '@material-ui/core'
+import { Grid, Paper } from '@material-ui/core';
 
 const Console = () => {
 
   const classes = useStyles();
 
-  return(
+  return (
     <Grid item className={classes.root}>
-        <Grid className={classes.console}>
-          <Grid item xs={12} className={classes.title}>
-            <Grid item xs={2} className={classes.groupButtons}>
-              <Paper spacing={1} className={classes.closeButton}></Paper>
-              <Paper spacing={1} className={classes.minimizeButton}></Paper>
-              <Paper spacing={1} className={classes.maxmizeButton}></Paper>
-            </Grid>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="h5" style={{color: 'white'}}>{'>_Crystyano Almeida'}</Typography>
+      <Grid className={classes.console}>
+        <Grid item xs={12} className={classes.bar}>
+          <Grid item xs={2} className={classes.groupButtons}>
+            <Paper spacing={1} className={classes.closeButton}></Paper>
+            <Paper spacing={1} className={classes.minimizeButton}></Paper>
+            <Paper spacing={1} className={classes.maxmizeButton}></Paper>
           </Grid>
         </Grid>
+        <Grid item xs={12} className={classes.title}>
+          <h3 className={classes.titleStyleClass}>
+            Crystyano
+            <span className={classes.titleStyleWhite}>
+              .
+            </span>
+            <span className={classes.titleStyleMethod}>
+              Almeida
+            </span>
+            <span className={classes.titleStyleWhite}>
+              ();
+            </span>
+          </h3>
+        </Grid>
       </Grid>
+    </Grid>
   );
 }
 

@@ -1,5 +1,5 @@
 import { CardMedia, Grid } from "@material-ui/core";
-import React, { Component } from "react";
+import React from "react";
 import rocket from '../../assets/astronaut-cute.svg'
 import useStyles from "./styles";
 

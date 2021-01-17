@@ -9,7 +9,7 @@ const AppToolBar = () => {
 
     return (
         <div className={classes.root}>
-            <AppBar className={classes.AppBar} color="transparent" elevation={0}>
+            <AppBar className={classes.appBar} color="transparent" elevation={0}>
                 <Toolbar className={classes.appBarWrapper}>
                     <h1 className={classes.appBarTitle}>
                         Crystyano
