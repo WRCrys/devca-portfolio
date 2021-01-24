@@ -6,7 +6,7 @@ import earth from '../../assets/earth.png';
 import moon from '../../assets/moon.png';
 import js from '../../assets/javascript-logo.svg';
 import code from '../../assets/code.png';
-import hacking from '../../assets/hacking.png';
+import hacking from '../../assets/hacking.svg';
 import development from '../../assets/development.png';
 import xbox from '../../assets/xbox.png';
 import basketball from '../../assets/basketball.png';
@@ -15,6 +15,7 @@ import csharp from '../../assets/csharp-logo.svg';
 import react from '../../assets/react-logo.svg';
 import sqlserver from '../../assets/sql-server.svg';
 import git from '../../assets/git.svg';
+import vscode from '../../assets/vscode-logo.svg';
 import useStyles from './styles';
 import TagDesc from '../TagDesc';
 
@@ -77,6 +78,10 @@ const About = ({ offset, speed }) => {
 
       <ParallaxLayer offset={1.3} speed={0.3} style={{ pointerEvents: 'none' }}>
         <img src={js} alt="" className={classes.jsLogo} />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1.8} speed={0.3} style={{ pointerEvents: 'none' }}>
+        <img src={vscode} alt="" className={classes.vscodeLogo} />
       </ParallaxLayer>
     </div>
   );

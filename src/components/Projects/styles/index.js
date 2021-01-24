@@ -6,8 +6,9 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         color: 'white',
         fontFamily: 'Nunito',
+        margin: 70,
         [theme.breakpoints.down("md")]: {
-            marginTop: 900,
+            marginTop: 500,
         }
 
     },
@@ -17,22 +18,21 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         fontSize: 50,
     },
-    rocketHappy: {
-        height: 250,
-        marginLeft: '17%',
-        marginTop: -50,
-        transform: 'rotate(25deg)',
+    planet: {
+        height: 200,
+        marginLeft: '80%',
     },
-    appleLogo: {
-        height: 100,
+    vsIDE: {
+        height: 70,
         marginLeft: '17%',
-        [theme.breakpoints.down("md")]: {
-            marginTop: 200,
-        }
     },
-    androidLogo: {
-        height: 100,
-        marginLeft: '77%',
+    git: {
+        height: 70,
+        marginLeft: '67%',
+    },
+    github: {
+        height: 90,
+        marginLeft: '47%',
     },
 }));
 

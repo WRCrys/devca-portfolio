@@ -82,6 +82,13 @@ const useStyles = makeStyles((theme) => ({
             width: '15%'
         }
     },
+    vscodeLogo: {
+        marginLeft: '7%',
+        [theme.breakpoints.down("md")]: {
+            marginLeft: '2%',
+            width: '15%'
+        }
+    },
     apresetation: {
         display: 'flex',
         flexDirection: 'column',

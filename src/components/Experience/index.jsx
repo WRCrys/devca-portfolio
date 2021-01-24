@@ -28,28 +28,28 @@ const Experience = ({ offset, speed }) => {
                             enterprise={"Pague Menos"}
                             started={"14/Dez/2020"}
                             finish={null}
-                            text={"Desenvolvimento"} />
+                            text={"Desenvolvimento de software usando C# com React e manutanção em VB VBNet e C#."} />
 
                         <JobLeft
                             image={astronautMoon}
                             enterprise={"Wipro - IVIA"}
                             started={"24/Jun/2019"}
                             finish={"11/Dez/2020"}
-                            text={"ashdiashdiashdiahsdiashdiasuhdiashdiasuhh"} />
+                            text={"Manutenção de softawares usando VB, VBNet, C# e React. Correção de bug e pequenas melhorias."} />
 
                         <JobRight
                             image={alien}
                             enterprise={"Prolins"}
                             started={"01/Mar/2019"}
                             finish={null}
-                            text={"Desenvolvimento"} />
+                            text={"Desenvolvimento de apps mobile híbridos usando Ionic."} />
 
                         <JobLeft
                             image={spaceshipPlane}
                             enterprise={"AGBTEC"}
                             started={"24/Jun/2019"}
                             finish={"11/Dez/2020"}
-                            text={"ashdiashdiashdiahsdiashdiasuhdiashdiasuhh"} />
+                            text={"Desenvolvimento de apps Android usando Java."} />
                     </div>
                 </div>
 
