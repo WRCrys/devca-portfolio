@@ -1,15 +1,17 @@
-import React, { Component } from "react";
-import rocket from '../../assets/astronaut.png'
-import './styles/rocket.css'
+import { CardMedia, Grid } from "@material-ui/core";
+import React from "react";
+import rocket from '../../assets/astronaut-cute.svg'
+import useStyles from "./styles";
 
-class Astronaut extends Component {
-  render() {
-    return(
-      <div className="rocket">
-        <img src={rocket} className="rocket-img" alt="" />
-      </div>
-    )
-  }
+const Astronaut = () => {
+
+  const classes = useStyles();
+
+  return (
+    <Grid className={classes.astronaut}>
+      <CardMedia component="img" image={rocket} />
+    </Grid>
+  );
 }
 
 export default Astronaut

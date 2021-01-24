@@ -1,13 +1,15 @@
-import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './pages/Home'
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import AppToolBar from './components/AppToolBar';
+import Home from './pages/Home';
 
 const Routes = () => {
-  return(
+  return (
     <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Home} />
-    </Switch>
+      <AppToolBar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
     </BrowserRouter>
   )
 }
