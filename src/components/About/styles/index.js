@@ -7,7 +7,9 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         flexDirection: 'column',
         color: 'white',
-        marginTop: 50,
+        [theme.breakpoints.down("lg")]: {
+            marginTop: 50,
+        }
 
     },
     title: {
@@ -64,6 +66,11 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down("md")]: {
             width: '24%',
             marginTop: 110,
+        },
+        [theme.breakpoints.up("xl")]: {
+            width: '15%',
+            marginTop: -248,
+            marginLeft: 160,
         }
     },
     moon: {
@@ -73,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down("md")]: {
             width: '15%',
             marginTop: 70,
-        }
+        },
     },
     jsLogo: {
         marginLeft: '85%',

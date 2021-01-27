@@ -7,7 +7,7 @@ const Console = () => {
   const classes = useStyles();
 
   return (
-    <Grid item className={classes.root}>
+    <Grid item xs={12} sm={12} md={12} lg={6} xl={6} className={classes.root}>
       <Grid className={classes.console}>
         <Grid item xs={12} className={classes.bar}>
           <Grid item xs={2} className={classes.groupButtons}>

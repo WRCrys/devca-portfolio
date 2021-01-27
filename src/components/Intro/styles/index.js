@@ -17,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
             width: '16%',
             marginTop: -50,
             marginLeft: '60%',
+        },
+        [theme.breakpoints.up("xl")]: {
+            marginLeft: '56%',
+            //marginTop: 60,
         }
     },
     reactLogo: {

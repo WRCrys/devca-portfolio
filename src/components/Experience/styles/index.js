@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Nunito',
         [theme.breakpoints.down("md")]: {
             marginTop: 900,
-        }
+        },
 
     },
     title: {

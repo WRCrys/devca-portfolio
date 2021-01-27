@@ -12,6 +12,10 @@ const useStyles = makeStyles((theme) => ({
             minHeight: 470,
             minWidth: 470,
             top: -40
+        },
+        [theme.breakpoints.up("xl")]: {
+            minHeight: 687,
+            minWidth: 760,
         }
     },
 }));

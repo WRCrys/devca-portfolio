@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
@@ -23,13 +24,13 @@ const useStyles = makeStyles((theme) => ({
         borderBottomRightRadius: 10,
         borderBottomLeftRadius: 10,
         height: 310,
-        maxWidth: 500,
+        width: 500,
         [theme.breakpoints.down("md")]: {
-            maxWidth: '100%',
+            width: '100%',
             height: 180,
         },
         [theme.breakpoints.up("xl")]: {
-            maxWidth: 700,
+            width: 700,
             height: 380,
         },
 
@@ -99,6 +100,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 40,
         [theme.breakpoints.down("md")]: {
             fontSize: 25,
+        },
+        [theme.breakpoints.up("xl")]: {
+            fontSize: 55
         }
     },
     titleStyleWhite: {
